@@ -21,3 +21,10 @@ VALUES ('The Falling Box', 1, 2015, 25000),
   ('Under Water', 5, 2020, 106000),
   ('Another Fork', 5, 2021, 140000);
   
+  -- Query 1: SELECT with a comparison operator the albums that have sold at least 100,000 copies.
+SELECT * FROM albums WHERE num_sold >= 100000;
+
+  -- Query 2: SELECT matching a range of values between 2018 and 2020.
+ SELECT * FROM albums WHERE year BETWEEN 2018 AND 2020;
+  -- Query 3: SELECT for attributes matching a list of values with band_ids of either 1, 3, or 4.
+SELECT * FROM albums WHERE band_id IN (1, 3, 4);
